@@ -1,0 +1,58 @@
+NOTAS DE SELENIUM 
+
+for _ in range(repeticiones):
+            actions.send_keys(Keys.TAB)
+            time.sleep(1)
+
+#wait = WebDriverWait(driver, 10)
+#geo = wait.until(EC.presence_of_element_located((By.XPATH, "*[@id='tablebkg']/tbody/tr[1]/td/button[3]")))
+        #geo = self.driver.find_element(By.NAME, "textsearch")
+        #geo.send_keys("C-491BXD")
+        #geo.send_keys(Keys.ENTER)
+        #geo.click()
+
+
+
+
+
+""" # Obtener la manija de la ventana actual (ventana original)
+        ventana_original = driver.window_handles[0]
+        # Esperar a que se abra la nueva pesta?a (puedes usar WebDriverWait)
+        WebDriverWait(driver, 10).until(lambda driver: len(driver.window_handles) > 1)
+        # Obtener la manija de la nueva pesta?a
+        nueva_ventana = driver.window_handles[1]
+        # Cambiar al contexto de la nueva pesta?a
+        driver.switch_to.window(nueva_ventana)
+        geo = driver.find_element(By.XPATH, "//*[@id='accordion']/div[2]/h3/a")
+        geo.click()
+        time.sleep(3)
+        tabla = driver.find_element(By.ID, "box-table-a")
+        filas = driver.find_element(By.XPATH, "//*[@id='box-table-a']/tbody/tr")
+        for fila in filas:
+            celdas = fila.find_element(By.XPATH, "//*[@id='box-table-a']/tbody/tr/td[1]")
+
+            for celda in celdas:
+                print(celda.text) 
+        
+        rows = elementos = driver.find_element(By.XPATH, "//*[@id='box-table-a']/tbody/tr")
+        print(rows)
+        col = elementos = driver.find_element(By.XPATH, "//*[@id='box-table-a']/tbody/tr[1]/th")
+        print(rows)
+        print(col)
+        for n in range(2, rows+1):
+            for b in range (col+1):
+                dato = elementos = driver.find_element(By.XPATH, "///*[@id='box-table-a']/tbody/tr["+str(n)+"]/td["+str(b)+"]").text
+                print(dato, end='                                       ')
+            print()
+        #km//*[@id="box-table-a"]/tbody/tr/td[3]  """
+
+
+
+
+		
+# Esperar a que se abra la nueva pesta?a (puedes usar WebDriverWait)
+            WebDriverWait(driver, 10).until(lambda driver: len(driver.window_handles) > 1)
+            # Obtener la manija de la nueva pesta?a
+            nueva_ventana = driver.window_handles[1]
+            # Cambiar al contexto de la nueva pesta?a
+            driver.switch_to.window(nueva_ventana)
